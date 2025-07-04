@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biodata Ola ✨</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>✨ Ola's Cute Biodata ✨</h1>
+    </header>
+
+    <section class="profile">
+  <img src="friends (105).jpg" alt="Foto Ola" id="myImg">
+  <h2>Hijrotul Maulani (Ola)</h2>
+  <p>Seorang mahasiswi di Universitas Mataram yang suka desain web, suka warna pastel, dan suka cerita random sama AI 😆</p>
+</section>
+
+<!-- Modal untuk gambar -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+
+
+    <section class="biodata">
+      <h3>📖 Biodata Diri</h3>
+      <ul>
+        <li><strong>Nama:</strong> Hijrotul Maulani</li>
+        <li><strong>Nama Panggilan:</strong> Ola</li>
+        <li><strong>Tempat Tanggal Lahir:</strong> Masbagik, 13 Agustus 2006</li>
+        <li><strong>Alamat:</strong> Masbagik, Lombok Timur</li>
+        <li><strong>Hobi:</strong> Ngoding, desain, bobo, dengerin lagu</li>
+        <li><strong>Cita-cita:</strong> Software Engineer(Aamiin) 💻✨</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ by Ola ✨</p>
+    </footer>
+  </div>
+</body>
+
+<script>
+  // Ambil elemen gambar dan modal
+  var modal = document.getElementById("myModal");
+  var img = document.getElementById("myImg");
+  var imgModal = document.getElementById("imgModal");
+  var span = document.getElementsByClassName("close")[0];
+
+  // Saat gambar di-klik, buka modal
+  img.onclick = function() {
+    modal.style.display = "block";
+    imgModal.src = this.src;
+  }
+
+  // Saat tombol close (x) di-klik, tutup modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Klik di luar gambar, tutup modal
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</html>
