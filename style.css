@@ -107,3 +107,19 @@ footer p {
 .close:hover {
   color: #d63384;
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .profile img {
+    width: 100%;
+    height: auto;
+  }
+  .biodata ul {
+    padding-left: 15px;
+  }
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+}
